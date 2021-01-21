@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CustomRoundedRectangle: View {
-    var defaultCornerRadius: CGFloat = 15
+    var defaultCornerRadius: CGFloat = 10
     
     var body: RoundedRectangle {
         RoundedRectangle(cornerRadius: defaultCornerRadius)
@@ -29,14 +29,14 @@ struct CustomTextField: View {
             }
             
             TextField("", text: $text)
-                .padding(.all, 20)
+                .padding(.horizontal, 20)
                 .foregroundColor(.white)
                 .keyboardType(keyboardType)
                 .disableAutocorrection(!enableAutocorrection)
                 .autocapitalization(autocapitalization)
         }.overlay(
             CustomRoundedRectangle().body
-                .stroke(Color("TextFieldBorderColor"), lineWidth: 5)
+                .stroke(Color("TextFieldBorderColor"), lineWidth: 3)
         ).background(CustomRoundedRectangle().body.fill(Color("TextFieldColor")))
     }
 }
