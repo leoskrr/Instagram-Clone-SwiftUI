@@ -7,14 +7,6 @@
 
 import SwiftUI
 
-struct CustomRoundedRectangle: View {
-    var defaultCornerRadius: CGFloat = 10
-    
-    var body: RoundedRectangle {
-        RoundedRectangle(cornerRadius: defaultCornerRadius)
-    }
-}
-
 struct CustomTextField: View {
     var placeholder: String = ""
     @Binding var text: String
