@@ -18,7 +18,7 @@ struct CustomSecureView: View {
             }
             
             SecureField("", text: $text)
-                .padding(.horizontal, 20)
+                .padding(.all, 20)
                 .foregroundColor(.white)
             
         }.overlay(
