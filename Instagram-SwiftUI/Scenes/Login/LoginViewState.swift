@@ -15,6 +15,6 @@ struct LoginViewState: Equatable {
 // Store computed variables in extension for improving code organization
 extension LoginViewState {
     var shouldEnableLoginButton: Bool {
-        username.isEmpty == false && password.isEmpty == false
+        username.isEmpty || password.isEmpty
     }
 }
