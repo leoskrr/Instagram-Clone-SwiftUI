@@ -24,7 +24,8 @@ struct LoginView: View {
                     .padding(.bottom)
                 
                 CustomTextField(placeholder: "Usário", text: $username, enableAutocorrection: false, autocapitalization: .none)
-                
+                    .padding(.bottom, 5)
+                                
                 CustomSecureView(placeholder: "Senha", text: $password)
                 
                 Text("Esqueceu a senha?")
