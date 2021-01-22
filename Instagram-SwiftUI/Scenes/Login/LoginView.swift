@@ -31,7 +31,7 @@ struct LoginView: View {
                 
                 CustomButton {
                     //
-                }.disabled(model.bindings.shouldEnableLoginButton.wrappedValue)
+                }.disabled(model.state.shouldEnableLoginButton)
                 
                 Divider()
                     .background(Color.gray)
