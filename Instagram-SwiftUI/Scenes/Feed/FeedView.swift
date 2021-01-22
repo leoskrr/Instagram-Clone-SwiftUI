@@ -15,7 +15,7 @@ struct FeedView: View {
             VStack {
                 CustomNavigationBar()
             }
-        }
+        }.navigationBarHidden(true)
     }
 }
 
