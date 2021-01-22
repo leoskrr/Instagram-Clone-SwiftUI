@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Neue Illustrationen von Conrado Salinas - Update aus Los Angeles.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

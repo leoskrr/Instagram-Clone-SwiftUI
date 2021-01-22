@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Blissful Nightmare by ijuraru on DeviantArt.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
