@@ -17,11 +17,12 @@ struct CustomTextField: View {
     var body: some View {
         ZStack(alignment: .leading) {
             if text.isEmpty {
-                Text(placeholder).foregroundColor(Color("PlaceholderColor")).padding()
+                Text(placeholder).foregroundColor(Color("PlaceholderColor"))
+                    .padding(.horizontal)
             }
             
             TextField("", text: $text)
-                .padding(.all, 20)
+                .padding(.all, 15)
                 .foregroundColor(.white)
                 .keyboardType(keyboardType)
                 .disableAutocorrection(!enableAutocorrection)

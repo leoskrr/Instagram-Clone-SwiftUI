@@ -14,11 +14,11 @@ struct CustomSecureView: View {
     var body: some View {
         ZStack(alignment: .leading) {
             if text.isEmpty {
-                Text(placeholder).foregroundColor(Color("PlaceholderColor")).padding()
+                Text(placeholder).foregroundColor(Color("PlaceholderColor")).padding(.horizontal)
             }
             
             SecureField("", text: $text)
-                .padding(.all, 20)
+                .padding(.all, 15)
                 .foregroundColor(.white)
             
         }.overlay(
