@@ -22,7 +22,7 @@ struct LoginView: View {
                     .background(Color.black)
                     .padding(.bottom)
                 
-                CustomTextField(placeholder: "Usário", text: model.bindings.username, enableAutocorrection: false, autocapitalization: .none)
+                CustomTextField(placeholder: "Usuário", text: model.bindings.username, enableAutocorrection: false, autocapitalization: .none)
                     .padding(.bottom, 5)
                 
                 CustomSecureView(placeholder: "Senha", text: model.bindings.password)
