@@ -10,6 +10,7 @@
 		3519AC8C25BA37B700876A52 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3519AC8B25BA37B700876A52 /* CustomSecureField.swift */; };
 		3519AC9125BA3AAD00876A52 /* CustomRoundedRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3519AC9025BA3AAD00876A52 /* CustomRoundedRectangle.swift */; };
 		3519AC9625BA5C8000876A52 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3519AC9525BA5C8000876A52 /* CustomButton.swift */; };
+		3519AC9A25BA639100876A52 /* LinkText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3519AC9925BA639100876A52 /* LinkText.swift */; };
 		35D8C35625B9D51A00909FCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D8C35525B9D51A00909FCA /* AppDelegate.swift */; };
 		35D8C35825B9D51A00909FCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D8C35725B9D51A00909FCA /* SceneDelegate.swift */; };
 		35D8C35A25B9D51A00909FCA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D8C35925B9D51A00909FCA /* ContentView.swift */; };
@@ -24,6 +25,7 @@
 		3519AC8B25BA37B700876A52 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		3519AC9025BA3AAD00876A52 /* CustomRoundedRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRoundedRectangle.swift; sourceTree = "<group>"; };
 		3519AC9525BA5C8000876A52 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		3519AC9925BA639100876A52 /* LinkText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkText.swift; sourceTree = "<group>"; };
 		35D8C35225B9D51A00909FCA /* Instagram-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D8C35525B9D51A00909FCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35D8C35725B9D51A00909FCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				35D8C36D25B9D86F00909FCA /* CustomTextField.swift */,
 				3519AC9025BA3AAD00876A52 /* CustomRoundedRectangle.swift */,
 				3519AC9525BA5C8000876A52 /* CustomButton.swift */,
+				3519AC9925BA639100876A52 /* LinkText.swift */,
 			);
 			path = "Instagram-SwiftUI";
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				3519AC8C25BA37B700876A52 /* CustomSecureField.swift in Sources */,
 				3519AC9625BA5C8000876A52 /* CustomButton.swift in Sources */,
 				35D8C36B25B9D59800909FCA /* LoginView.swift in Sources */,
+				3519AC9A25BA639100876A52 /* LinkText.swift in Sources */,
 				35D8C35A25B9D51A00909FCA /* ContentView.swift in Sources */,
 				35D8C36E25B9D86F00909FCA /* CustomTextField.swift in Sources */,
 			);
