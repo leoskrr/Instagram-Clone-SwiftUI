@@ -42,7 +42,7 @@ struct LoginView: View {
                         .foregroundColor(.gray)
                     LinkText(text: "Cadastre-se.", alignment: .leading, maxWidth: 110)
                 }.padding()
-                
+
             }.padding()
         }
     }
@@ -50,10 +50,12 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(
-            model: .init(
-                initialState: .init()
+        NavigationView {
+            LoginView(
+                model: .init(
+                    initialState: .init()
+                )
             )
-        )
+        }
     }
 }
