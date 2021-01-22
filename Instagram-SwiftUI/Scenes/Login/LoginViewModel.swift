@@ -10,19 +10,19 @@ import SwiftUI
 final class LoginViewModel: ObservableObject {
     @Published private(set) var state: LoginViewState
     
+    var bindings: (
+        username: Binding<String>,
+        password: Binding<String>
+    ) {
+        (
+            username: Binding(get: { self.state.username }, set: { self.state.username = $0 }),
+            password: Binding(get: { self.state.password }, set: { self.state.password = $0 })
+        )
+    }
+    
     init(initialState: LoginViewState = .init()) {
         state = initialState
     }
         
-    var bindings: (
-        username: Binding<String>,
-        password: Binding<String>,
-        shouldEnableLoginButton: Binding<Bool>
-    ) {
-        (
-            username: Binding<String>.constant(state.username),
-            password: Binding<String>.constant(state.password),
-            shouldEnableLoginButton: Binding<Bool>.constant(state.shouldEnableLoginButton)
-        )
-    }
+    
 }
