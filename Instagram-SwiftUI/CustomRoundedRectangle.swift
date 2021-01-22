@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CustomRoundedRectangle: View {
-    var defaultCornerRadius: CGFloat = 10
+    var defaultCornerRadius: CGFloat = 5
     
     var body: RoundedRectangle {
         RoundedRectangle(cornerRadius: defaultCornerRadius)
