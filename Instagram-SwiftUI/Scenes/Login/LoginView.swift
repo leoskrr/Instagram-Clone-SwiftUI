@@ -29,8 +29,9 @@ struct LoginView: View {
                 
                 LinkText(text: "Esqueceu a senha?", alignment: .trailing)
                 
-                CustomButton {
-                    //
+                NavigationLink(destination: FeedView()){
+                    //TO-DO: Change Custom Button to a View with Navigation Link
+                    CustomButton { }.disabled(true)
                 }.disabled(model.state.shouldEnableLoginButton)
                 
                 Divider()
