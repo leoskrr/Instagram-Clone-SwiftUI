@@ -22,11 +22,12 @@ struct CustomTextField: View {
             }
             
             TextField("", text: $text)
-                .padding(.all, 15)
+                .padding(.horizontal)
                 .foregroundColor(.white)
                 .keyboardType(keyboardType)
                 .disableAutocorrection(!enableAutocorrection)
                 .autocapitalization(autocapitalization)
+                .frame(minWidth: 0, idealWidth: .infinity ,maxWidth: .infinity, minHeight: 50, idealHeight: 50, maxHeight: 50, alignment: .center)
         }.overlay(
             CustomRoundedRectangle().body
                 .stroke(Color("TextFieldBorderColor"), lineWidth: 3)
