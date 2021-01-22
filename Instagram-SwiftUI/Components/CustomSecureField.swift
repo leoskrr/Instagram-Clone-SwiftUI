@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CustomSecureView: View {
+struct CustomSecureField: View {
     var placeholder: String = ""
     @Binding var text: String
     
@@ -29,8 +29,8 @@ struct CustomSecureView: View {
     }
 }
 
-struct CustomSecureView_Previews: PreviewProvider {
+struct CustomSecureField_Previews: PreviewProvider {
     static var previews: some View {
-        CustomSecureView(placeholder: "Password", text: .constant("")).previewLayout(.sizeThatFits)
+        CustomSecureField(placeholder: "Password", text: .constant("")).previewLayout(.sizeThatFits)
     }
 }

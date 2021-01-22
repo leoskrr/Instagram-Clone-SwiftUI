@@ -25,7 +25,7 @@ struct LoginView: View {
                 CustomTextField(placeholder: "Usuário", text: model.bindings.username, enableAutocorrection: false, autocapitalization: .none)
                     .padding(.bottom, 5)
                 
-                CustomSecureView(placeholder: "Senha", text: model.bindings.password)
+                CustomSecureField(placeholder: "Senha", text: model.bindings.password)
                 
                 LinkText(text: "Esqueceu a senha?", alignment: .trailing)
                 
