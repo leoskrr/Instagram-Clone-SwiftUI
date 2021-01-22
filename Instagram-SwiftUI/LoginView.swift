@@ -28,10 +28,22 @@ struct LoginView: View {
                                 
                 CustomSecureView(placeholder: "Senha", text: $password)
                 
-                Text("Esqueceu a senha?")
-                    .bold()
-                    .foregroundColor(Color("BlueLinkColor"))
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 60, alignment: .trailing)
+                LinkText(text: "Esqueceu a senha?", alignment: .trailing)
+                
+                CustomButton {
+                    //
+                }.disabled(username.isEmpty || password.isEmpty)
+                
+                Divider()
+                    .background(Color.gray)
+                    .padding(.top, 15)
+                
+                HStack(alignment: .center) {
+                    Text("Não tem uma conta?")
+                        .foregroundColor(.gray)
+                    LinkText(text: "Cadastre-se.", alignment: .leading, maxWidth: 110)
+                }.padding()
+                    
             }.padding()
         }
     }
