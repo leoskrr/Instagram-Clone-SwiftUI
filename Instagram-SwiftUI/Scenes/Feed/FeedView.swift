@@ -12,8 +12,10 @@ struct FeedView: View {
         ZStack(alignment: .top){
             Color.black.ignoresSafeArea()
             
-            VStack {
+            VStack(spacing: 0) {
                 CustomNavigationBar()
+                StoriesView()
+                Divider()
             }
         }.navigationBarHidden(true)
     }
