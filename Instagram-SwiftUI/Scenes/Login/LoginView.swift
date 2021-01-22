@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State var username: String = ""
-    @State var password: String = ""
+    @ObservedObject var model: LoginViewModel
     
     var body: some View {
         ZStack{
@@ -23,16 +22,16 @@ struct LoginView: View {
                     .background(Color.black)
                     .padding(.bottom)
                 
-                CustomTextField(placeholder: "Usário", text: $username, enableAutocorrection: false, autocapitalization: .none)
+                CustomTextField(placeholder: "Usário", text: model.bindings.username, enableAutocorrection: false, autocapitalization: .none)
                     .padding(.bottom, 5)
-                                
-                CustomSecureView(placeholder: "Senha", text: $password)
+                
+                CustomSecureView(placeholder: "Senha", text: model.bindings.password)
                 
                 LinkText(text: "Esqueceu a senha?", alignment: .trailing)
                 
                 CustomButton {
                     //
-                }.disabled(username.isEmpty || password.isEmpty)
+                }.disabled(model.bindings.shouldEnableLoginButton.wrappedValue)
                 
                 Divider()
                     .background(Color.gray)
@@ -43,7 +42,7 @@ struct LoginView: View {
                         .foregroundColor(.gray)
                     LinkText(text: "Cadastre-se.", alignment: .leading, maxWidth: 110)
                 }.padding()
-                    
+                
             }.padding()
         }
     }
@@ -51,6 +50,10 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView(
+            model: .init(
+                initialState: .init()
+            )
+        )
     }
 }
