@@ -14,8 +14,20 @@ struct FeedView: View {
             
             VStack(spacing: 0) {
                 CustomNavigationBar()
-                StoriesView()
-                Divider()
+                
+                ScrollView(.vertical, showsIndicators: false) {
+                    StoriesView()
+                        .padding(.horizontal, -10)
+                    Divider()
+                    VStack(spacing: 0) {
+                        ForEach(Post().all(), id: \.id) {
+                            post in
+                            PostItem(post: post)
+                                .padding(.bottom)
+                        }
+                    }
+                }
+                
             }
         }.navigationBarHidden(true)
     }
@@ -23,6 +35,13 @@ struct FeedView: View {
 
 struct FeedView_Previews: PreviewProvider {
     static var previews: some View {
-        FeedView()
+        TabView {
+            FeedView().tabItem {
+                Image(systemName: "house.fill")
+            }
+        }.onAppear() {
+            UITabBar.appearance().barTintColor = .black
+            
+        }
     }
 }
