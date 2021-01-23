@@ -27,7 +27,7 @@ struct PostItem: View {
                 Spacer()
                 
                 Image(systemName: "ellipsis")
-            }.padding(.horizontal, 5)
+            }.padding(.all, 5)
             
             Image(post.imageName)
                 .resizable()
