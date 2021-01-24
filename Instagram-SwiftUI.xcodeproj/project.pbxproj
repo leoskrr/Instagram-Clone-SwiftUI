@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3502142F25BE05EA0094165A /* login-filled-texts.png in Resources */ = {isa = PBXBuildFile; fileRef = 3502142B25BE05E80094165A /* login-filled-texts.png */; };
+		3502143025BE05EA0094165A /* iphone-mockup.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3502142C25BE05EA0094165A /* iphone-mockup.gif */; };
+		3502143125BE05EA0094165A /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 3502142D25BE05EA0094165A /* login.png */; };
+		3502143225BE05EA0094165A /* feed.png in Resources */ = {isa = PBXBuildFile; fileRef = 3502142E25BE05EA0094165A /* feed.png */; };
 		3519AC8C25BA37B700876A52 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3519AC8B25BA37B700876A52 /* CustomSecureField.swift */; };
 		3519AC9125BA3AAD00876A52 /* CustomRoundedRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3519AC9025BA3AAD00876A52 /* CustomRoundedRectangle.swift */; };
 		3519AC9625BA5C8000876A52 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3519AC9525BA5C8000876A52 /* CustomButton.swift */; };
@@ -31,6 +35,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3502142B25BE05E80094165A /* login-filled-texts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-filled-texts.png"; sourceTree = "<group>"; };
+		3502142C25BE05EA0094165A /* iphone-mockup.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "iphone-mockup.gif"; sourceTree = "<group>"; };
+		3502142D25BE05EA0094165A /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
+		3502142E25BE05EA0094165A /* feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feed.png; sourceTree = "<group>"; };
 		3519AC8B25BA37B700876A52 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		3519AC9025BA3AAD00876A52 /* CustomRoundedRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRoundedRectangle.swift; sourceTree = "<group>"; };
 		3519AC9525BA5C8000876A52 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -67,6 +75,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3502142A25BE05D60094165A /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				3502142E25BE05EA0094165A /* feed.png */,
+				3502142C25BE05EA0094165A /* iphone-mockup.gif */,
+				3502142B25BE05E80094165A /* login-filled-texts.png */,
+				3502142D25BE05EA0094165A /* login.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		3519AC9C25BA6F0100876A52 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +150,7 @@
 		35D8C34925B9D51A00909FCA = {
 			isa = PBXGroup;
 			children = (
+				3502142A25BE05D60094165A /* Screenshots */,
 				35D8C35425B9D51A00909FCA /* Instagram-SwiftUI */,
 				35D8C35325B9D51A00909FCA /* Products */,
 			);
@@ -225,6 +245,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3502142F25BE05EA0094165A /* login-filled-texts.png in Resources */,
+				3502143225BE05EA0094165A /* feed.png in Resources */,
+				3502143125BE05EA0094165A /* login.png in Resources */,
+				3502143025BE05EA0094165A /* iphone-mockup.gif in Resources */,
 				35D8C36225B9D51B00909FCA /* LaunchScreen.storyboard in Resources */,
 				35D8C35F25B9D51B00909FCA /* Preview Assets.xcassets in Resources */,
 				35D8C35C25B9D51B00909FCA /* Assets.xcassets in Resources */,
