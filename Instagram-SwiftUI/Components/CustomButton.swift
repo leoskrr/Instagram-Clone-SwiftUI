@@ -8,21 +8,27 @@
 import SwiftUI
 
 struct CustomButton: View {
-    var action: () -> Void = { }
+    var isActive: Bool
     
     var body: some View {
-        Button("Entrar", action: action)
-            .padding(.all)
-            .foregroundColor(.white)
-            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 50, alignment: .center)
-            .background(Color(UIColor.systemBlue))
-            .buttonStyle(PlainButtonStyle())
-            .cornerRadius(10)
+        ZStack {
+            Text("Entrar")
+                .font(.subheadline)
+                .bold()
+                .foregroundColor(.white)
+            
+            if(!isActive) {
+                Rectangle().foregroundColor(Color(UIColor.black)).opacity(0.3)
+            }
+        }
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 50, alignment: .center)
+        .background(Color(UIColor.systemBlue))
+        .cornerRadius(5)
     }
 }
 
 struct CustomButton_Previews: PreviewProvider {
     static var previews: some View {
-        CustomButton().previewLayout(.sizeThatFits)
+        CustomButton(isActive: false).previewLayout(.sizeThatFits)
     }
 }

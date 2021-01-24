@@ -31,7 +31,7 @@ struct LoginView: View {
                 
                 NavigationLink(destination: CustomTabView()){
                     //TO-DO: Change Custom Button to a View with Navigation Link
-                    CustomButton { }.disabled(true)
+                    CustomButton(isActive: !model.state.shouldEnableLoginButton)
                 }.disabled(model.state.shouldEnableLoginButton)
                 
                 Divider()
