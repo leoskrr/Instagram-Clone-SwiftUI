@@ -27,7 +27,6 @@ struct FeedView: View {
                         }
                     }
                 }
-                
             }
         }.navigationBarHidden(true)
     }
@@ -35,13 +34,6 @@ struct FeedView: View {
 
 struct FeedView_Previews: PreviewProvider {
     static var previews: some View {
-        TabView {
-            FeedView().tabItem {
-                Image(systemName: "house.fill")
-            }
-        }.onAppear() {
-            UITabBar.appearance().barTintColor = .black
-            
-        }
+        FeedView()
     }
 }
